@@ -210,7 +210,7 @@ public class TicketSeller {
 
 작성한 클래스들의 관계는 아래의 UML 다이어그램처럼 이루어져 있다.
 
-![Untitled](./1.png)
+![Untitled](./assets/1.png)
 
 이제 준비는 끝났다. 위 클래스들을 조합해서 관람객을 소극장에 입장시키는 로직을 만들면 된다.
 
@@ -343,7 +343,7 @@ public class Theater {
 
 이것은 Theater를 추가한 UML이다. 이처럼 의존성이 과한 경우를 **결합도(coupling)가 높다**고 한다.
 
-![Untitled](./2.png)
+![Untitled](./assets/2.png)
 
 ## 3. 설계 개선하기
 
@@ -466,7 +466,7 @@ TicketSeller 또한 매표소에 돈을 적립하고 티켓을 가져오기만 �
 
 지금까지의 진행상황을 UML로 표현하면 다음과 같다.
 
-![Untitled](./3.png)
+![Untitled](./assets/3.png)
 
 하지만 아직도 Audience가 Bag에 직접 접근하고 있다. 관람객은 티켓을 사기 위해 가방에게 돈을 달라고만 하면 된다. **(사실 돈 또는 초대장을 판매원에게 보내야하지만, 초대장의 유무를 판별하는 것 또한 가방에게 넘겨주겠다.)**
 
