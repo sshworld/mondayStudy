@@ -99,11 +99,13 @@ ex) includeSetupAndTeardownPages, includeSetupPages, includeTeardownPage, includ
 문체가 비슷하면 이야기를 순차적으로 출어가기도 쉬워진다.
 
 ## 6. 함수 인수
+```java
+int add(int x, int y){   //x,y 가 매개변수
+	return x + y;
+}
 
-![R1280x0.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/c9d1eae9-826f-4ba6-8c94-aab1b06aba59/R1280x0.png)
-
-![R1280x0-2.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/3852b591-3822-40dd-b346-a7a1d134f0a8/R1280x0-2.png)
-
+add(2,7); //2,7이 인수
+```
 매개변수란 함수를 정의할 때 사용되는 변수다. 인수는 함수가 호출될 때 매개변수에 실제로 담기는 값이다.
 
 함수에서 이상적인 인수 개수는 0개(무항)이고 그 다음이 1개(단항), 2개(이항)고 3개(삼항)는 가능한 피하는게 좋고 4개이상(다항)은 특별한 이유가 있어도 사용하면 안 된다. 
